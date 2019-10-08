@@ -2,7 +2,15 @@
   "name": "ts-bin-heap",
   "version": "0.0.0-development",
   "description": "",
-  "keywords": [],
+  "keywords": [
+    "typescript",
+    "binary heap",
+    "priority queue",
+    "algorithm",
+    "priority",
+    "data structure",
+    "heap"
+  ],
   "main": "dist/ts-bin-heap.umd.js",
   "module": "dist/ts-bin-heap.es5.js",
   "typings": "dist/types/ts-bin-heap.d.ts",
