@@ -21,6 +21,8 @@ import { createBinaryHeap } from 'ts-bin-heap'
 
 The `createBinaryHeap` function should be all you need to get started.
 
+Play with [this example on codesandbox.io](https://codesandbox.io/s/binaryheap-8tffl?expanddevtools=1&fontsize=14&module=%2Fsrc%2Findex.ts).
+
 Say we have a collection of people:
 
 ```typescript
