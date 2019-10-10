@@ -85,4 +85,26 @@ describe('Dummy test', () => {
     const h = createBinaryHeap<number>(n => n)
     expect(h.pop()).toBeNull()
   })
+  it('thrashes', () => {
+    for (let i = 0; i < 200; ++i) {
+      for (const isStable of [false, true]) {
+        for (const direction of ['min', 'max'] as (('min' | 'max')[])) {
+          const h = createBinaryHeap<number>(n => n, direction, isStable)
+          range(0, 100).forEach(_ => h.push((Math.random() * 10) | 0))
+          let current: number | null | undefined
+          while (h.length > 0) {
+            const v = h.pop()
+            if (current != null) {
+              if (direction === 'min') {
+                expect(v).toBeGreaterThanOrEqual(current)
+              } else {
+                expect(v).toBeLessThanOrEqual(current)
+              }
+            }
+            current = v
+          }
+        }
+      }
+    }
+  })
 })
