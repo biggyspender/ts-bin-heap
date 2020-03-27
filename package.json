@@ -11,6 +11,7 @@
     "data structure",
     "heap"
   ],
+  "sideEffects": false,
   "main": "dist/ts-bin-heap.umd.js",
   "module": "dist/ts-bin-heap.es5.js",
   "typings": "dist/types/ts-bin-heap.d.ts",
@@ -39,7 +40,7 @@
     "commit": "git-cz",
     "semantic-release": "semantic-release",
     "semantic-release-prepare": "ts-node tools/semantic-release-prepare",
-    "travis-deploy-once": "travis-deploy-once"
+    "travis-deploy-once": "travis-deploy-once --pro"
   },
   "lint-staged": {
     "{src,test}/**/*.ts": [
@@ -114,7 +115,7 @@
     "rollup-plugin-node-resolve": "^3.4.0",
     "rollup-plugin-sourcemaps": "^0.4.2",
     "rollup-plugin-typescript2": "^0.24.3",
-    "semantic-release": "^15.13.24",
+    "semantic-release": "^17.0.4",
     "shelljs": "^0.8.3",
     "travis-deploy-once": "^5.0.9",
     "ts-jest": "^23.10.2",
@@ -126,7 +127,7 @@
     "typescript": "^3.0.3"
   },
   "dependencies": {
-    "ts-comparer-builder": "^1.1.0"
+    "ts-comparer-builder": "^1.1.1"
   },
   "husky": {
     "hooks": {
