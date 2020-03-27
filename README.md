@@ -6,7 +6,7 @@ This package contains functions for creating binary-heaps conforming to the [`Bi
 
 The main methods of `BinaryHeap<T>` are simply `push` and `pop`. You can push items into the heap, and you can pop items from it. **The item that is popped will always be either the maximum or the minimum item in the collection.**
 
-[![npm version](http://img.shields.io/npm/v/ts-bin-heap.svg?style=flat)](https://npmjs.org/package/ts-bin-heap 'View this project on npm')
+[![npm version](https://img.shields.io/npm/v/ts-bin-heap.svg?style=flat)](https://npmjs.org/package/ts-bin-heap 'View this project on npm')
 [![Build Status](https://travis-ci.org/biggyspender/ts-bin-heap.svg?branch=master)](https://travis-ci.org/biggyspender/ts-bin-heap)
 
 [Auto-generated documentation](https://biggyspender.github.io/ts-bin-heap/)
